@@ -1,0 +1,16 @@
+ First Instance
+
+ ✔ DCreate game class with title and genr @done (15-08-15 17:59)
+ ✔ Create game library class with title and array of games @done (15-08-15 18:03)D create
+ ✔ create game jquery element @done (15-08-15 18:55)
+  ✔ form for inputing games @done (15-08-15 18:57)
+ ✔ append game library on DOM @done (15-08-15 19:12)
+ ✔ get game title values from the form @done (15-08-15 19:32)
+ ✔ be able to append more than one game, add to games array @done (15-08-15 19:34)
+ ✔ clear out library before each append, to prevent games from stacking up repeatedly @done (15-08-15 19:36)
+
+
+Second Instance -- add dropdown to select library to start, on selection show insert game form, and show all games in the library
+ ✔ add form with dropdown with game library selections @done (15-08-15 20:30)
+ ✔ when user selects the library show insert game form @done (15-08-15 20:43)
+ ☐ when user selects the library show the current games in the selected library, try with hardcoded video library and board library

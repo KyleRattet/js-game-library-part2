@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Game Library</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+
+    <div class="container" id="main-container">
+
+      <div class='row' id='button-menu'>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+            Choose A Library<span class="caret"></span>
+          </button>
+
+
+          <button id="add-new-library" type="submit" class="btn btn-default">Add New Library</button>
+
+          <form id="submit-new-library">
+           <input type="text" class="form-control" id="new-library-name"placeholder="Enter New Library name" required>
+           <button id="add-new-library" type="submit" class="btn btn-default">Submit</button>
+
+          </form>
+          <ul class="dropdown-menu" id="pick-a-library"></ul>
+        </div>
+
+      </div>
+
+
+    <br>
+
+    <form id="add-new-game-form">
+      <div class="form-group">
+        <input type="text" class="form-control" id="game-name"placeholder="Enter game name" required>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+
+    </form>
+
+    <br><hr><br>
+      <h3 id="game-library-name"></h3>
+      <div id="all-the-games"></div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/dom.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/gamelibrary.js"></script>
+     <script type="text/javascript" src="js/utility.js"></script>
+  </body>
+</html>
