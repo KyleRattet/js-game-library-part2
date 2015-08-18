@@ -5,7 +5,15 @@
   border: 1px solid black;
 }
 
-#button-menu {
+#button-menu{
   margin: 20px;
 
+}
+
+#new-library-submit {
+   margin: 20px;
+}
+
+#new-game-submit {
+  margin: 20px;
 }

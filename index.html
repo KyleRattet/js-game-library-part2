@@ -13,9 +13,9 @@
 
     <div class="container" id="main-container">
 
-      <div class='row' id='button-menu'>
+      <div class='row text-center' id='button-menu'>
 
-
+        <div class="col-xs-2">
 
           <div class="btn-group">
             <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
@@ -23,33 +23,63 @@
             </button>
 
 
+            <ul class="dropdown-menu" id="pick-a-library"></ul>
+
+          </div>
+
+        </div>
+
+          <div class="col-xs-1"><p>-OR-</p></div>
+
+          <div class="col-xs-2">
+
 
             <button id="add-new-library" type="submit" class="btn btn-info">Add New Library</button>
 
-            <form id="submit-new-library">
+          </div>
+
+
+      </div>
+
+        <div class='row text-right' id='new-library-submit'>
+
+          <div class="col-xs-2">
+             <form id="submit-new-library">
              <input type="text" class="form-control" id="new-library-name"placeholder="Enter New Library name" required>
+             <br>
              <button id="add-new-library" type="submit" class="btn btn-info">Submit</button>
 
             </form>
-            <ul class="dropdown-menu" id="pick-a-library"></ul>
+
           </div>
 
-      </div>
+        </div>
+
+
+
+
+
 
 
     <br>
 
-    <form id="add-new-game-form">
-      <div class="form-group">
-        <input type="text" class="form-control" id="game-name"placeholder="Enter game name" required>
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <div class='row text-right' id='new-game-submit'>
+        <div class="col-xs-2">
 
-    </form>
+        <form id="add-new-game-form">
+          <div class="form-group">
+            <input type="text" class="form-control" id="game-name"placeholder="Enter game name" required>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
 
-    <br><hr><br>
-      <h3 id="game-library-name"></h3>
-      <div id="all-the-games"></div>
+        </form>
+          </div>
+
+        </div>
+
+        <br><hr>
+          <h3 id="game-library-name"></h3>
+          <div id="all-the-games"></div>
 
     </div>
 
