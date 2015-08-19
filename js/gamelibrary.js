@@ -24,10 +24,22 @@ GameLibrary.prototype.addGame = function(game) {
 };
 
 
+// Delete Game from Library
+// GameLibrary.prototype.deleteGame = function(game) {
+//   var index = this.games.indexOf(game);
+
+//   if (index > -1) {
+//     this.games.splice(index,1);
+//   }
+
+//   return this.games;
+// };
+
 //show all games on DOM from this library
 GameLibrary.prototype.renderAllGames = function() {
   for (var i = this.games.length - 1; i >= 0; i--) {
-    $('#all-the-games').append('<p>Game Name: '+this.games[i].title+'</p');
+    $('#all-the-games')
+    .append('<p>Game Name: '+this.games[i].title+ "  " +'<input id="delete" type="button" value="test">'+'</p>');
   }
 };
 

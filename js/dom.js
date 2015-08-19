@@ -52,13 +52,6 @@ $('#submit-new-library').on('submit', function () {
 
 
 
-
-
-
-   // $('#pick-a-library').append(
-   //    '<li><a href="#" id="'+allLibraries[i].title+'">'+allLibraries[i].title+'</a></li>')
-
-
 });
 
 //submit new game form button click
@@ -69,6 +62,7 @@ $('form').on('submit', function (event){
   var gameName = $('#game-name').val();
   //create new game instance
   var newGame = new Game(gameName);
+  console.log(newGame);
 
   for (var i = 0; i < allLibraries.length; i++) {
     if ( $('#game-library-name').html() === allLibraries[i].title) {
@@ -80,4 +74,37 @@ $('form').on('submit', function (event){
 
   $('#game-name').val('');
 
+});
+
+// //delete button
+// $(":button").on('click', function (){
+//   // $(this).remove();
+//   // $('#delete').prev().remove();
+//   console.log('test');
+// });
+
+$(document).on('click', '#delete', function() {
+
+  //remove from DOM
+  $(this).parent().remove();
+
+  //remove from game library
+  // hide any alerts
+  // $('#alert').hide();
+  // // remove game from game library
+  // var gameLibraryName = $('#add-game-form').attr('class');
+  // for (var i = 0; i < allGameLibraries.length; i++) {
+  //   if (gameLibraryName === allGameLibraries[i].title) {
+  //     for (var j = 0; j < allGameLibraries[i].games.length; j++) {
+  //       if (allGameLibraries[i].games[j].title === $(this).attr('id')) {
+  //         allGameLibraries[i].games.splice(j, 1);
+  //         // render games from the selected library
+  //         allGameLibraries[i].render();
+  //         $('#alert').html(createAlertElement('success', 'Game Removed!'));
+  //         $('#alert').show();
+  //       }
+  //     }
+  //   }
+  // }
+  console.log('test delete');
 });

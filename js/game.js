@@ -3,6 +3,7 @@
 function Game (title, genre) {
   this.title = title;
   this.genre = genre;
+  this.uuid = generateUUID();
 }
 
 //Game Methods
